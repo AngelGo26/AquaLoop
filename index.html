@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--  manejo y configuración del caché del equipo para esta página -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- "viewport"  permite tomar y configura la pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acualoop</title>
+
+    <!--  Definiciones ícono favorito --- favicon.ico --->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./imagenes/icon/logo.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="./imagenes/icon/logo.png">
+    <link rel="manifest" href="./imagenes/icon/site.webmanifest">
+    <link rel="mask-icon" href="./imagenes/icon/logo.svg" color="#5bbad5">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/styles.css?n=0">
+    <script src="./js/script.js"></script>
+
+</head>
+
+
+<body>
+
+    <header class="encabezado">
+        <div class="imagen-izquierda">
+            <img src="imagenes/logo_udec.png" alt="Imagen Izquierda">
+        </div>
+        <div class="centro">
+            <h1>Aqualoop</h1>
+            <div class="imagen-central">
+                <img id="imagen_articulo1" src="imagenes/Logoacua1.png" alt="Imagen Central">
+            </div>
+        </div>
+        <div class="derecha">
+            <h2>Ingeniería Mecatrónica</h2>
+            <p>Autores:</p>
+            <p>Angel Gomez, Diego Robayo</p>
+        </div>
+    </header>
+
+
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="glosa_fun.html">Glosario Ingeniería</a></li>
+            <li><a href="formulario.html">Contactenos</a></li>
+        </ul>
+    </nav>
+
+    <hr><br>
+    <p class="DefProyecto">Acualoop es una innovadora solución enfocada en la recolección y reutilización del agua de
+        lluvia, integrando tecnología electrónica avanzada en hogares y negocios. Este proyecto se centra en la
+        captación, almacenamiento y administración inteligente del agua de lluvia en tiempo real, permitiendo a los
+        usuarios reducir drásticamente su dependencia de fuentes de agua convencionales y su huella hídrica. Mediante
+        sensores inteligentes y un controlador central, Acualoop rastrea y gestiona la captación de agua de lluvia y su
+        redistribución automática según las necesidades del usuario. Además, Acualoop ofrece una interfaz intuitiva
+        donde los usuarios pueden visualizar reportes detallados y recibir recomendaciones personalizadas para maximizar
+        la eficiencia en el uso del agua recolectada, fomentando prácticas sostenibles y responsables. Acualoop no solo
+        representa una solución ecológica y amigable con el medio ambiente, sino que también es una alternativa práctica
+        y económica para conservar y aprovechar un recurso natural esencial.</p>
+    <br>
+    <hr><br>
+
+    <!-- Tabla de Contenidos -->
+    <DIV id="tabla-contenidos">
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#objetivos">OBJETIVOS</a></li>
+            <li><a href="#justificacion">1. JUSTIFICACION</a>
+                <ul>
+                    <li><a href="#situacion-problematica">1.1. Situación Problémica</a></li>
+                    <li><a href="#analisis-situacion-actual">1.2. Análisis de la situación actual</a>
+                        <ul>
+                            <li><a href="#Estudios-preliminares">1.2.1. Estudios preliminares</a></li>
+                            <li><a href="#Instrumentos-para-investigacion">1.2.2. Instrumentos para investigación y
+                                    levantamiento de información</a></li>
+                            <li><a href="#Encuesta">1.2.3. Encuesta</a></li>
+                            <li><a href="#Conclusiones-encuesta">1.2.4. Conclusiones de la encuesta</a></li>
+                            <li><a href="#Diagrama-espina-de-pescado">1.2.5. Diagrama espina de pescado</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#marco-teorico">2. MARCO TEORICO CONCEPTUAL</a>
+                <ul>
+                    <li><a href="#teoria-de-proyectos">2.1.Conceptos y terminología asociada con el proyecto</a></li>
+                    <li><a href="#normativa-actual">2.2. Normativa aplicable al proyecto</a></li>
+                </ul>
+            </li>
+            <li><a href="#Disciplinas">3. DISCIPLINAS QUE INTERVIENEN EN EL PROYECTO</a></li>
+
+            <li><a href="#propuesta">4. PROPUESTA</a></li>
+            <li><a href="#Referencias-Bibliográficas">5. Referencias Bibliográficas</a>
+
+        </ul>
+    </DIV>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="objetivos">
+            <article id="objetivos" class="SubCapituloTema">
+                <h2 class="Titulo1">Objetivos</h2>
+                <!-- ---------------------------------------------->
+                <p class="Parrafo1">Desarrollar e implementar un sistema integral de recolección y reutilización de agua
+                    de
+                    lluvia que permita a hogares y negocios reducir su consumo de agua potable y optimizar la gestión de
+                    este recurso mediante tecnologías avanzadas de monitoreo y control, promoviendo prácticas
+                    sostenibles,
+                    disminuyendo el impacto ambiental y generando ahorros económicos.</p>
+                <ul class="Parrafo1">
+                    <li>Captación y almacenamiento eficiente del agua de lluvia: Diseñar un sistema que maximice la
+                        recolección y almacenamiento seguro de agua de lluvia para su uso posterior. </li>
+                    <li>Reutilización automatizada: Desarrollar un mecanismo que distribuya el agua recolectada de
+                        manera
+                        eficiente según las necesidades del hogar o negocio. </li>
+                    <li>Sostenibilidad y concienciación: Fomentar un uso consciente y responsable del agua,
+                        contribuyendo a
+                        la preservación de los recursos naturales y al desarrollo de prácticas sostenibles. </li>
+                </ul>
+            </article>
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+        </section>
+
+        <section id="justificacion">
+            <h2 class="Titulo1">1. Justificación</h2>
+            <!-- ---------------------------------------------->
+
+            <article id="situacion-problematica" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.1. Situacion problematica</h3>
+                <!-- ---------------------------------------------->
+
+                <p class="Parrafo1">El aumento en la demanda de agua potable, sumado a los efectos del cambio climático
+                    y la sobreexplotación de los recursos hídricos, ha desencadenado una crisis global en el suministro
+                    de agua. Ante esta problemática, es urgente desarrollar soluciones que fomenten un uso más eficiente
+                    y responsable del agua. Acualoop responde a este desafío proponiendo un sistema que recolecta y
+                    reutiliza el agua empleada en actividades diarias en hogares e industrias, contribuyendo al ahorro
+                    de agua y la reducción de aguas residuales, mitigando así la contaminación y mejorando la calidad de
+                    vida. </p>
+                <p class="Parrafo1">Además, al disminuir la dependencia de fuentes externas, Acualoop se presenta como
+                    una alternativa sostenible y accesible que apoya la preservación del recurso a largo plazo y
+                    promueve prácticas que contribuyen al cumplimiento de los Objetivos de Desarrollo Sostenible
+                    relacionados con el agua y saneamiento. </p>
+
+            </article>
+
+            <article id="analisis-situacion-actual" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2. Análisis de la situación actual</h3>
+                <!-- ---------------------------------------------->
+
+                <p class="Parrafo1">El porcentaje de empresas en Colombia que se dedican al reciclaje de agua para
+                    hogares y empresas es relativamente bajo en comparación con el total de empresas activas en el país.
+                    Si bien no hay un porcentaje específico publicado, el mercado de tratamiento y reutilización de agua
+                    está en crecimiento debido a la creciente demanda de soluciones sostenibles frente a la escasez de
+                    agua y las normativas ambientales. </p>
+            </article>
+
+            <article id="Estudios-preliminares" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2.1. Estudios preliminares</h3>
+
+                <p class="Parrafo1">Lo primero que hicimos fue identificar una problemática actual y analizarla en
+                    detalle para entender sus causas y efectos. Luego, buscamos una posible solución para este problema
+                    y, al investigar, descubrimos que las soluciones existentes eran limitadas o no resolvían
+                    completamente la situación. Al darnos cuenta de que nuestra propuesta era viable y no se había
+                    explorado ampliamente, decidimos profundizar en el proyecto. A partir de ahí, comenzamos a
+                    investigar más a fondo los aspectos técnicos y prácticos necesarios para llevar a cabo la solución,
+                    asegurándonos de que fuera una opción efectiva y realista para abordar el problema.
+
+                </p>
+
+            </article>
+
+            <article id="Instrumentos-para-investigacion" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2.2. Instrumentos para investigacion y levantamiento de informacion</h3>
+
+                <p class="Parrafo1">Como fuente principal, utilizamos el navegador de Google para investigar información
+                    sobre la problemática, buscando comprender sus causas, efectos y antecedentes para desarrollar una
+                    solución efectiva. A través de esta búsqueda, identificamos diversas perspectivas y analizamos si
+                    existían soluciones previamente implementadas en contextos similares, lo que nos ayudó a tener una
+                    visión amplia del tema. Esto nos permitió evaluar qué enfoques habían funcionado, cuáles no, y
+                    adaptarlos o mejorarlos según nuestras necesidades.
+
+                </p>
+                <p class="Parrafo1">Además, utilizamos herramientas de inteligencia artificial (IA) para generar
+                    imágenes de apoyo, facilitando la comunicación visual y la comprensión de la información. Estas
+                    imágenes no solo reforzaron nuestro análisis, sino que también ayudaron a simplificar conceptos
+                    complejos, haciendo el contenido más accesible y claro para los usuarios o el público objetivo. En
+                    resumen, el uso combinado de motores de búsqueda y tecnologías de IA enriqueció nuestro proceso de
+                    investigación y diseño, brindándonos tanto una base sólida de conocimientos como recursos visuales
+                    efectivos para presentar la solución propuesta.
+
+                </p>
+            </article>
+
+            <article id="Encuesta" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2.3. Encuesta</h3>
+                <p class="Parrafo1"></p>
+                <div id="Encuesta">
+                </div>
+                <div class="contenedor-secciones">
+                    <section>
+                        <h2></h2>
+                        <p></p>
+                        <img src="imagenes/pre1-.png">
+                        <img src="imagenes/pre2-.png">
+                        <img src="imagenes/preg3-.png">
+                        <img src="imagenes/preg4-.png">
+                        <img src="imagenes/preg5-.png">
+                    </section>
+                    <section>
+                        <h2></h2>
+                        <p></p>
+                        <img src="imagenes/preg6-.png">
+                        <img src="imagenes/preg7-.png">
+                        <img src="imagenes/preg8-.png">
+                        <img src="imagenes/preg9-.png">
+                        <img src="imagenes/preg10-.png">
+                    </section>
+                </div>
+            </article>
+
+
+
+
+            <article id="Conclusiones-encuesta" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2.4. Conclusiones de la encuesta</h3>
+
+                <p class="Parrafo1">Alta conciencia: La mayoría de los encuestados demuestra una conciencia considerable
+                    sobre la importancia del ahorro de agua, tanto en el hogar como en la comunidad.
+
+                </p>
+                <p class="Parrafo1">Motivación: Los principales motivadores para implementar soluciones de ahorro de
+                    agua son la conciencia ambiental, el ahorro económico y la escasez de agua.
+
+                </p>
+                <p class="Parrafo1">Barreras percibidas: A pesar de la conciencia, algunos encuestados perciben barreras
+                    como el costo inicial de las tecnologías de ahorro de agua y la falta de información como obstáculos
+                    para su implementación.
+
+                </p>
+                <p class="Parrafo1">Escasez y calidad: Los encuestados identifican la escasez y la calidad del agua como
+                    los principales problemas relacionados con este recurso.
+
+                </p>
+                <p class="Parrafo1">Relación costo-beneficio: Los encuestados valoran el ahorro económico como un
+                    motivador importante. Sin embargo, es necesario demostrar de manera clara la relación
+                    costo-beneficio de las inversiones en tecnologías de ahorro de agua a largo plazo.
+                    Potencial de los mercados locales: La demanda de soluciones de ahorro de agua puede generar
+                    oportunidades de negocio para empresas locales. Es importante fomentar la creación de empresas que
+                    desarrollen y comercialicen productos y servicios innovadores. vera otras
+
+                </p>
+
+            </article>
+
+            <article id="Diagrama-espina-de-pescado" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2.5. Diagrama espina de pescado</h3>
+                <img src="imagenes/espina-.png">
+
+
+
+            </article>
+
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+        </section>
+
+
+
+        <section id="marco-teorico">
+            <h2 class="Titulo1">2. MARCO TEORICO</h2>
+            <!-- ---------------------------------------------->
+
+            <article id="teoria-de-proyectos" class="SubCapituloTema">
+                <h3 class="Subtitulo1">2.1.Conceptos y terminología asociada con el proyecto</h3>
+                <!-- ---------------------------------------------->
+
+                <p class="Parrafo2">Explicación detallada -.......</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Características</th>
+                            <th>¿Qué es?</th>
+                            <th>Método de medición</th>
+                            <th>Valor aceptable de consumo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="section-header">
+                            <td colspan="4">Físicas</td>
+                        </tr>
+                        <tr>
+                            <td>Turbidez</td>
+                            <td>La turbidez mide la claridad del agua, es decir, la cantidad de partículas en suspensión
+                                que afectan la transparencia.</td>
+                            <td>Se utiliza un turbidímetro, que mide la cantidad de luz que atraviesa el agua y cómo es
+                                dispersada por las partículas en suspensión.</td>
+                            <td>Inferior a 1 NTU</td>
+                        </tr>
+                        <tr>
+                            <td>Conductividad eléctrica</td>
+                            <td>La conductividad mide la capacidad del agua para conducir electricidad, relacionada con
+                                la concentración de iones.</td>
+                            <td>Se usa un conductímetro, que mide la resistencia al paso de una corriente eléctrica
+                                entre dos electrodos.</td>
+                            <td>Inferior a 2,500 µS/cm</td>
+                        </tr>
+                        <tr>
+                            <td>pH</td>
+                            <td>El pH mide la acidez o alcalinidad del agua, basado en la concentración de iones de
+                                hidrógeno (H+).</td>
+                            <td>Se utiliza un medidor de pH con un electrodo de vidrio sensible al H+.</td>
+                            <td>6.5 - 8.5</td>
+                        </tr>
+
+                        <tr class="section-header">
+                            <td colspan="4">Químicas</td>
+                        </tr>
+                        <tr>
+                            <td>Oxígeno disuelto</td>
+                            <td>Es la cantidad de oxígeno presente en el agua, esencial para la vida acuática.</td>
+                            <td>Se mide con un oxímetro, que utiliza un sensor electroquímico o de fluorescencia.</td>
+                            <td>4-6 mg/L en aguas naturales</td>
+                        </tr>
+                        <tr>
+                            <td>Cloro residual</td>
+                            <td>Cantidad de cloro libre presente en el agua después de la desinfección.</td>
+                            <td>Se utiliza un colorímetro o tiras reactivas.</td>
+                            <td>0.2 - 0.5 mg/L</td>
+                        </tr>
+                        <tr>
+                            <td>Nitratos y nitritos</td>
+                            <td>Productos del ciclo del nitrógeno, tóxicos en exceso.</td>
+                            <td>Se mide con espectrofotometría o kits colorimétricos.</td>
+                            <td>Nitratos: &le; 50 mg/L; Nitritos: &le; 0.1 mg/L</td>
+                        </tr>
+                        <tr>
+                            <td>Metales pesados (plomo, mercurio, arsénico)</td>
+                            <td>Estos metales son tóxicos en concentraciones bajas.</td>
+                            <td>Se utilizan técnicas avanzadas como la espectrometría de absorción atómica (AAS).</td>
+                            <td>Plomo: 0.01 mg/L; Mercurio: 0.001 mg/L; Arsénico: 0.01 mg/L</td>
+                        </tr>
+                        <tr>
+                            <td>Carbono orgánico total (COT)</td>
+                            <td>Indica la cantidad de carbono en forma orgánica.</td>
+                            <td>Se mide mediante oxidación catalítica y cuantificación del CO2.</td>
+                            <td>&le; 5 mg/L</td>
+                        </tr>
+
+                        <tr class="section-header">
+                            <td colspan="4">Biológicas</td>
+                        </tr>
+                        <tr>
+                            <td>Coliformes totales y Escherichia coli</td>
+                            <td>Bacterias indicadoras de contaminación fecal.</td>
+                            <td>Pruebas microbiológicas como el método del número más probable (NMP).</td>
+                            <td>Ausentes por 100 mL</td>
+                        </tr>
+                        <tr>
+                            <td>Cryptosporidium y Giardia</td>
+                            <td>Protozoos parásitos que causan enfermedades gastrointestinales graves.</td>
+                            <td>Inmunofluorescencia o microscopía de fluorescencia.</td>
+                            <td>Ausentes en agua potable</td>
+                        </tr>
+                        <tr>
+                            <td>Cianobacterias (toxinas de algas)</td>
+                            <td>Las cianobacterias pueden liberar toxinas peligrosas.</td>
+                            <td>Cromatografía líquida de alta resolución (HPLC) o ensayos de ELISA.</td>
+                            <td>&le; 1 µg/L</td>
+                        </tr>
+
+                        <tr class="section-header">
+                            <td colspan="4">Organolépticas</td>
+                        </tr>
+                        <tr>
+                            <td>Sabor y olor</td>
+                            <td>El agua potable debe ser inodora e insípida.</td>
+                            <td>Pruebas sensoriales con paneles de evaluación humana o cromatografía de gases.</td>
+                            <td>Ausencia de compuestos que afecten sabor u olor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+
+            <article id="normativa-actual" class="SubCapituloTema">
+                <h3 class="Subtitulo1">2.2. Normativa aplicable al proyecto</h3>
+                <!-- ---------------------------------------------->
+
+                <p class="Parrafo2">El cumplimiento de normativas es esencial para garantizar que los sistemas de
+                    tratamiento y reutilización de agua funcionen de manera segura y legal en Colombia. Para esto, es
+                    importante tener en cuenta varias regulaciones y normas que abarcan aspectos ambientales, técnicos,
+                    de tecnología de la información y protección de datos. </p>
+                <p class="Parrafo2">El Decreto 1076 de 2015, conocido como el Decreto Único Reglamentario del Sector
+                    Ambiente y Desarrollo Sostenible, agrupa las normativas clave para la regulación de los recursos
+                    hídricos. Este decreto incluye disposiciones sobre permisos para vertimientos, manejo de fuentes
+                    hídricas y la regulación de proyectos de reúso de agua, lo cual es esencial para proteger el recurso
+                    hídrico y cumplir con estándares ambientales en la reutilización de aguas tratadas. </p>
+                <p class="Parrafo2">Dentro de las Normas Técnicas Colombianas (NTC) destacan dos normas importantes. La
+                    NTC 1500 establece requisitos técnicos para los sistemas de alcantarillado, permitiendo una
+                    infraestructura adecuada para el manejo de aguas residuales. La NTC 4950, por su parte, regula el
+                    reúso de aguas tratadas en aplicaciones no potables como el riego, definiendo parámetros de calidad
+                    y buenas prácticas para el uso seguro de aguas tratadas, asegurando que estas sean adecuadas para su
+                    propósito sin representar riesgos para la salud. </p>
+                <p class="Parrafo2">El Plan Nacional de Adaptación al Cambio Climático (PNACC), aunque no es una
+                    normativa, fomenta el uso de soluciones tecnológicas para adaptarse y mitigar el cambio climático.
+                    Este plan es un respaldo estratégico que justifica la viabilidad y el impacto positivo de proyectos
+                    de reutilización de agua, apoyando iniciativas que promuevan la sostenibilidad. </p>
+                <p class="Parrafo2">En cuanto a la tecnología y transmisión de datos, la Ley 1341 de 2009 (Ley TIC)
+                    promueve el uso eficiente de tecnologías de información y comunicación, incluyendo sensores IoT para
+                    monitorear el agua. Además, la Resolución 1746 de 2015 del MinTIC regula la operación de
+                    dispositivos de corto alcance como Wi-Fi y Bluetooth, los cuales son importantes para la
+                    comunicación entre sensores y sistemas de monitoreo. A su vez, el Decreto 1078 de 2015 establece
+                    normas para las telecomunicaciones y redes, asegurando que los datos transmitidos cumplan con
+                    requisitos de seguridad. </p>
+                <p class="Parrafo2">Para proteger los datos de los usuarios, la Ley 1581 de 2012 (Ley de Protección de
+                    Datos Personales) es fundamental si el sistema recopila información sobre los hábitos de uso del
+                    agua. Esta ley obliga a los desarrolladores a garantizar la privacidad y el manejo seguro de los
+                    datos, obteniendo el consentimiento de los usuarios y protegiendo su información personal. </p>
+            </article>
+
+
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+
+        </section>
+
+    </main>
+    <section id="Disciplinas">
+        <h2 class="Titulo1">3. DISIPLINAS QUE INTERVIENEN EN EL PROYECTYO</h2>
+
+        <article id="situacion-problematica" class="SubCapituloTema">
+            <h3 class="Subtitulo1">Ingeniería hidráulica</h3>
+            <p class="Parrafo1">La ingeniería hidráulica es una rama de la ingeniería civil que considera el diseño,
+                análisis y manejo de proyectos relacionados con el agua tanto en su movimiento como almacenamiento o
+                distribución. Algunas de las estructuras que entran en esta descripción son presas, canales, sistemas de
+                drenaje, plantas de tratamiento, estructuras destinadas a control de inundaciones, y mucho más. La
+                ingeniería hidráulica toma principios de la mecánica de fluidos para prever cómo el agua interactuará
+                con varias estructuras e ideas, así como con el entorno, y busca soluciones para optimizar el uso del
+                agua, y reducir riesgos como los que vienen con la inundación. </p>
+
+            <h3 class="Subtitulo1">Ingeniería quimica</h3>
+            <p>La ingeniería química es una disciplina de la ingeniería que aplica principios de química, física,
+                biología y matemáticas para resolver problemas relacionados con la producción, transformación y uso de
+                materiales y energía. Los ingenieros químicos diseñan, optimizan y gestionan procesos industriales para
+                fabricar productos como medicamentos, alimentos, combustibles, productos químicos, entre otros, de
+                manera eficiente, segura y sostenible. Además, están involucrados en la mejora de procesos, el control
+                de calidad y el manejo de residuos en diversas industrias.</p>
+
+            <h3 class="Subtitulo1">Ingeniería geologica</h3>
+            <p>La ingeniería geológica es una rama de la ingeniería que aplica los principios y métodos de la geología
+                para resolver problemas relacionados con la construcción y el diseño de infraestructuras, obras civiles
+                y proyectos de ingeniería. Su enfoque principal es el estudio de los materiales del subsuelo (como
+                rocas, suelos y aguas subterráneas) para evaluar su comportamiento y estabilidad en proyectos como
+                túneles, presas, puentes, y cimentaciones. Los ingenieros geológicos analizan los riesgos geológicos
+                (terremotos, deslizamientos, inundaciones) y recomiendan soluciones técnicas para prevenir o mitigar
+                estos riesgos en el contexto de la construcción.</p>
+
+            <h3 class="Subtitulo1">Ingeniería ambiental</h3>
+            <p>La ingeniería ambiental es una disciplina de la ingeniería que se enfoca en el diseño, implementación y
+                gestión de soluciones para proteger y mejorar el entorno natural. Su objetivo principal es mitigar los
+                impactos negativos de las actividades humanas sobre el medio ambiente, como la contaminación del aire,
+                agua y suelo. Los ingenieros ambientales trabajan en proyectos que incluyen el tratamiento de aguas
+                residuales, la gestión de residuos, el control de la contaminación, la conservación de recursos
+                naturales y la implementación de tecnologías sostenibles. También se ocupan de la evaluación de impacto
+                ambiental y la creación de políticas y estrategias para promover la sostenibilidad.</p>
+
+        </article>
+        <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+</body>
+
+</html>
