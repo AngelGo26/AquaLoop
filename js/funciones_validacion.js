@@ -1,4 +1,3 @@
-
 /*
  Este ejercicio puede ser utilizado como ejemplo para implementar controles de verificación de DATOS ingresados en un formulario de HTML5. Aquí puede observar algunos procedimiento simples utilizando "Expresiones Regulares" que suelen aplicarse para validar la consistencia de los datos capturados y para asegurar que los datos estén correctos antes de su almacenamiento o procesamiento.
  ----------------------
